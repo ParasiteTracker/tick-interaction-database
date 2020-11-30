@@ -6,13 +6,17 @@
 
 ### Description
 
-bee-interaction-database is a repository for interaction and ecological trait data about bees (Hymenoptera). The observations are from the literature and focused on food, parasites, nesting biology, body size and other bee traits.
+The tick-interaction-database is a repository for interaction and ecological trait data about ticks. The observations are from the literature and focused on tick hosts, which are important vectors of many arthropod borne pathogens. This is part of the [Terrestrial Parasite Tracker](http://parasitetracker.org/).
 
 This GitHub repository was cloned from [globalbioticinteractions/template-dataset](https://github.com/globalbioticinteractions/template-dataset), which includes a blank interactions.tsv, README and globi.json. GloBI requires that the interactions.tsv be called interactions.tsv and for the globi.json file to exist. Some column headers of inteteractions.tsv file was modified from the cloned template, but follow the naming conventions.
 
 ### Citation
 
-Seltmann, K. (2020). TID: A project to share biotic interaction and ecological trait data about ticks. UC Santa Barbara: Cheadle Center for Biodiversity and Ecological Restoration. Retrieved on date
+Seltmann, K. (2020). TID: A project to share biotic interaction and ecological trait data about ticks. UC Santa Barbara: Cheadle Center for Biodiversity and Ecological Restoration. Retrieved on <date>.
+
+### Funding
+
+The tick-interaction-database is funded by the National Science Foundation award "Collaborative Research: Digitization TCN: Digitizing collections to trace parasite-host associations and predict the spread of vector-borne disease," Award numbers DBI:1901932 and DBI:1901926
 
 ### BioticInteraction Types
 
