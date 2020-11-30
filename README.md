@@ -12,11 +12,11 @@ This GitHub repository was cloned from [globalbioticinteractions/template-datase
 
 ### Citation
 
-Seltmann, K. (2020). TID: A project to share biotic interaction and ecological trait data about ticks. UC Santa Barbara: Cheadle Center for Biodiversity and Ecological Restoration. Retrieved on <date>.
+Seltmann, K. (2020). TID: A project to share biotic interaction and ecological trait data about ticks. UC Santa Barbara: Cheadle Center for Biodiversity and Ecological Restoration.
 
 ### Funding
 
-The tick-interaction-database is funded by the National Science Foundation award "Collaborative Research: Digitization TCN: Digitizing collections to trace parasite-host associations and predict the spread of vector-borne disease," Award numbers DBI:1901932 and DBI:1901926
+The tick-interaction-database is funded by the National Science Foundation award "Collaborative Research: Digitization TCN: Digitizing collections to trace parasite-host associations and predict the spread of vector-borne disease," Award numbers [DBI:1901932](https://nsf.gov/awardsearch/showAward?AWD_ID=1901932) and [DBI:1901926](https://nsf.gov/awardsearch/showAward?AWD_ID=1901926).
 
 ### BioticInteraction Types
 
@@ -24,9 +24,8 @@ The biotic species interactions in this dataset were mapped to terms in the Rela
 
 interactionTypeName | interactionTypeId | description
 --- | --- | --- |
-eats | http://purl.obolibrary.org/obo/RO_0002470 |
+has host |http://purl.obolibrary.org/obo/RO_0002454|X 'has host' y if and only if: x is an organism, y is an organism, and x can live on the surface of or within the body of y|
 (biotically) interacts with | http://purl.obolibrary.org/obo/RO_0002437 | An interaction relationship in which at least one of the partners is an organism and the other is either an organism or an abiotic entity with which the organism interacts.
-ecologically co-occurs with | http://purl.obolibrary.org/obo/RO_0008506 | An interaction relationship describing organisms that often occur together at the same time and space or in the same environment.
 
 
 ### Other Properties
