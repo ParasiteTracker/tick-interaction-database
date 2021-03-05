@@ -49,53 +49,24 @@ The definitions of the columns used in the interactions.tsv dataset are describe
   * **interactionText** : The phrase or phrases copied verbatim from the text that describe the interaction.
   * **sourceTaxonId** [DWC:scientificNameID](http://rs.tdwg.org/dwc/terms/scientificNameID) : An identifier for the nomenclatural (not taxonomic) details of a scientific name.
   * **sourceTaxonName** [DWC:scientificName](http://rs.tdwg.org/dwc/terms/scientificName) : The lowest level taxonomic rank that can be determined.
-  * **sourceVerbatimName** : An OTU, morphospecies or other designation of the taxon.
   * **sourceFamilyName** [DWC:family](http://rs.tdwg.org/dwc/terms/family) : The family name of the source taxon.
   * **sourceCommonName** [DWC:vernacularName](http://rs.tdwg.org/dwc/terms/Taxon) : common or vernacular name.
   * **sourceSexName** [DWC:sex](http://rs.tdwg.org/dwc/terms/sex) : The sex of the biological individual(s) represented in the Occurrence.
-  * **sourceSexID**  : Identifer for the sex name.
   * **sourceLifeStageName** [DWC:sex](http://rs.tdwg.org/dwc/terms/lifeStage) : TThe age class or life stage of the biological individual(s) at the time the Occurrence was recorded.
-  * **sourceAssociatedSequences** [DWC:sex](http://rs.tdwg.org/dwc/terms/associatedSequences) : 	list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.
-  * **interactionTypeId** : Identifier for the interaction type.
-  * **interpretedInteractionTypeName** : The name or term applied to the identifier of the interaction type as reported by the linked ontology.
-  * **isNegated** : This field is presently not supported in GloBI. It is intended to relate that a specific interaction was explicitly not observed.
+  * **interactionTypeId** : Identifier for the interaction type. This is the term that is the interpreted term of the interaction found in the paper.
   * **interactionTypeName** : interaction type (ex. eats, piercing). The name of the interaction type should be the name as it is listed in the original text, which is not always the name of the term it is mapped to. As long as the definition to the mapping is compatible with the ```interactionTypeName```, it is usable as a ```interactionTypeId```.
-  * **targetBodyPartName**  : The specific name of the target body part. The name of the body part should be the name as it is listed in the original text, which is not always the name of the term it is mapped to. As long as the definition to the mapping is compatible with the ```targetBodyPartName```, it is usable as a ```targetBodyPartId```.
-  * **targetBodyPartId**  : Identifer for the body part name.
-  * **experimentalConditionName**  : ("in nature" - most common)
-  * **experimentalConditionId** : 
-  * **targetTaxonId** [DWC:scientificNameID](http://rs.tdwg.org/dwc/terms/scientificNameID) : An identifier for the nomenclatural (not taxonomic) details of a scientific name.
+  * **isNegated** : This field is presently not supported in GloBI. It is intended to relate that a specific interaction was explicitly not observed.
   * **targetTaxonName** [DWC:scientificName](http://rs.tdwg.org/dwc/terms/scientificName) : The lowest level taxonomic rank that can be determined.
-  * **targetVerbatimName** : An OTU, morphospecies or other designation of the taxon.
   * **targetFamilyName** [DWC:family](http://rs.tdwg.org/dwc/terms/family) : The family name of the source taxon.
   * **targetCommonName** [DWC:vernacularName](http://rs.tdwg.org/dwc/terms/Taxon) : common or vernacular name.
   * **targetLifeStageName** [DWC:sex](http://rs.tdwg.org/dwc/terms/lifeStage) : TThe age class or life stage of the biological individual(s) at the time the Occurrence was recorded.
-  * **targetAssociatedSequences** [DWC:sex](http://rs.tdwg.org/dwc/terms/associatedSequences) : 	list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.
-  * **country** [DWC:country](http://rs.tdwg.org/dwc/terms/country) : The name of the country or major administrative unit in which the Location occurs.
-  * **stateProvince** [DWC:stateProvince](http://rs.tdwg.org/dwc/terms/stateProvince) : The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.
-  * **county** [DWC:county](http://rs.tdwg.org/dwc/terms/county) : The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.
-  * **verbatimLocality** [DWC:locality](http://rs.tdwg.org/dwc/terms/verbatimLocality) : The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.
-  * **locality** [DWC:locality](http://rs.tdwg.org/dwc/terms/locality) : The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.
-  * **habitat** [DWC:habitat](http://rs.tdwg.org/dwc/terms/habitat) : category or description of the habitat in which the Event occurred.
-  * **decimalLatitude** [DWC:decimalLatitude](http://rs.tdwg.org/dwc/terms/decimalLatitude) : 	The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
-  * **decimalLongitude** [DWC:decimalLongitude](http://rs.tdwg.org/dwc/terms/decimalLongitude) : The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.
-  * **coordinateUncertaintyInMeters** [DWC:http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters](https://dwc.tdwg.org/terms/#dwc:coordinateUncertaintyInMeters) : The horizontal distance (in meters) from the given decimalLatitude and decimalLongitude describing the smallest circle containing the whole of the Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term.
-  * **georeferenceRemarks** [DWC:http://rs.tdwg.org/dwc/terms/georeferenceRemarks](https://dwc.tdwg.org/terms/#dwc:georeferenceRemarks) : Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol.
-  * **minimumElevationInMeters** [DWC:minimumElevationInMeters](http://rs.tdwg.org/dwc/terms/minimumElevationInMeters) : do not add zeros, if only one elevation add to maximumElevationInMeters
-  * **maximumElevationInMeters** [DWC:maximumElevationInMeters](http://rs.tdwg.org/dwc/terms/maximumElevationInMeters) : do not add zeros, if only one elevation add to maximumElevationInMeters
-  * **verbatimEventDate** [DWC:eventDate](http://rs.tdwg.org/dwc/terms/verbatimEventDate) : The verbatim original representation of the date and time information for an Event.
-  * **eventDate** [DWC:eventDate](http://rs.tdwg.org/dwc/terms/eventDate) : The date-time or interval during which an Event occurred.
-  * **eventTime** [DWC:eventDate](http://rs.tdwg.org/dwc/terms/eventTime) : The time or interval during which an Event occurred.
-  * **otherTraits** : key:value list (delimited by semicolons) for describing other traits. These include body size, nesting behavior, and any other traits that are not considered biotic interactions.
+  * **higherGeography** [DWC:country](http://rs.tdwg.org/dwc/terms/higherGeography) : The name of the continent in which the Location occurs.
+  * **enteredBy**  : The person entering the data.
+  * **notes**  : Notes about the database entry.
   * **containsTaxonTreatment** : Does the paper contain taxon treatments? A taxon treatment is the scientific description of a taxon including a Latinized name of the nominate taxon, followed by one or several elements such as references to older literature citing this taxon and putting it in relation to the new information about the taxon being presented in the paper.
   * **TreatmentBankIdentifier** : The identifer for the taxon treatment from [TreatmentBank](http://plazi.org/resources/treatmentbank/). A paper with a taxon treatment will need to be looked up in TreatmentBank for the TreatmentBank identifier.
   * **referenceDoi** : This field was not populated in this dataset.
   * **referenceCitation**  : The reference for the interaction.
-  * **referenceType**  : The type of reference.
-  * **primarySource**  : Is the reference the primary source for the observation (TRUE/FALSE)? If it is not, include the primary source citation in the notes.
-  * **primarySourceReference** : If the reviewed article is not the primary source of the information (recorded as FALSE in primarySource) the citation for the primarySource is included here. If the reviewed article is the primary source this field is left blank.
-  * **enteredBy**  : The person entering the data.
-  * **notes**  : Notes about the database entry.
 
 
 ### Contribute
