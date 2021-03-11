@@ -1,5 +1,5 @@
 ## Tick Interaction Database
-[![Build Status](https://travis-ci.org/ParasiteTracker/tick-interaction-database.svg)](https://travis-ci.org/ParasiteTracker/tick-interaction-database)  [![GloBI](http://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:seltmann/tick-interaction-database)](http://globalbioticinteractions.org/?accordingTo=globi:seltmann/tick-interaction-database) 
+[![Build Status](https://travis-ci.org/ParasiteTracker/tick-interaction-database.svg)](https://travis-ci.org/ParasiteTracker/tick-interaction-database)  [![GloBI](http://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:ParasiteTracker/tick-interaction-database)](http://globalbioticinteractions.org/?accordingTo=globi:ParasiteTracker/tick-interaction-database) 
 
 [```Citation```](#Citation) / [```Interaction Types```](#interaction-types) / [```Data Definitions```](#data-definitions) / [```Included Resources```](#included-resources) /  [```Data Issues```](#data-issues) / [```Summary```](#summary)
 
