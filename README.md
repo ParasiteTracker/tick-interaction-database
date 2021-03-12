@@ -12,7 +12,7 @@ This GitHub repository was cloned from [globalbioticinteractions/template-datase
 
 ### Citation
 
-TID: A project to share biotic interaction and ecological trait data about ticks. UC Santa Barbara: Cheadle Center for Biodiversity and Ecological Restoration. 2020.
+Seltmann, K. (2020). TID: A project to share biotic interaction and ecological trait data about ticks. UC Santa Barbara: Cheadle Center for Biodiversity and Ecological Restoration.
 
 ### Funding
 
